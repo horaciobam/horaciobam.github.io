@@ -1,0 +1,10 @@
+body{
+  width: 97%;
+  margin: 1em auto;
+  font: .9em/1.2 Lato, sans-serif;
+  color: blue;
+}
+
+p{
+  color:red;
+}
