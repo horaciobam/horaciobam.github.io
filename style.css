@@ -8,3 +8,10 @@ body{
 p{
   color:red;
 }
+
+main{
+  color:green;
+  text-align: center;
+  padding: 10px;
+  background: beige;
+}
