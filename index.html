@@ -1,34 +1,74 @@
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en-CA">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>
-      Laura webpage
-    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laura Muñoz Baena, PhD — Bioinformatics | Virus Evolution | Phylodynamics</title>
+    <meta name="description" content="Laura Muñoz Baena, PhD — bioinformatics, virus evolution and phylodynamics." />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-light.png?v=2" media="(prefers-color-scheme: light)" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-dark.png?v=2" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header>
-      <!-- Top header containing menu-->
-      Overlaping reading frames in virus genomes
+      <a class="site-name" href="index.html">Laura Muñoz Baena</a>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <!-- <a href="publications.html">Publications</a> -->
+      </nav>
+      <input type="checkbox" id="theme-toggle" aria-label="Switch light/dark theme" title="Switch light/dark theme" />
     </header>
 
-    <main>
-      <section>
-        Section to be the input
-        <form action="/my-handling-form-page" method="post">
-          Form here
-        </form>
+    <main class="home">
+      <aside class="profile">
+        <img class="profile-photo" src="images/laura.jpg" alt="Portrait of Laura Muñoz Baena" width="150" height="150" />
+        <ul class="social-links">
+          <li><a class="linkedin" href="https://www.linkedin.com/in/laura-mu%C3%B1oz-baena-560055137">LinkedIn</a></li>
+          <li><a class="github" href="https://github.com/horaciobam">GitHub</a></li>
+        </ul>
+      </aside>
+
+      <div class="bio">
+        <h1>Laura Muñoz Baena</h1>
+        <p class="tagline">Bioinformatics · Virus Evolution · Phylodynamics</p>
+        <p>I study how interactions between viruses and their hosts have shaped the evolution of life. My research combines bioinformatics, phylogenetics, mathematical modelling, and open-source software development to investigate these evolutionary processes.</p>
+        <!-- <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor, etiam porta sem malesuada magna mollis euismod.</p>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+      </div>
+
+      <section class="selected-publications" aria-labelledby="selected-publications-heading">
+        <h2 id="selected-publications-heading">Selected Publications</h2>
+
+        <article class="publication">
+          <a class="publication-link"
+            href="https://doi.org/10.1371/journal.ppat.1014457"
+            target="_blank"
+            rel="noopener">
+
+            <img
+              class="publication-image"
+              src="images/pubs/selection.png"
+              alt=""
+              loading="lazy">
+
+            <div class="publication-content">
+              <h3>
+                Selection profiles in RNA viruses reflect the characteristics of viruses more than individual proteins
+              </h3>
+
+              <p class="publication-meta">
+                Laura Muñoz-Baena et al., PLoS Pathogens 22.7 (2026)
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <!-- <p><a href="publications.html">All publications</a></p> -->
       </section>
 
-      <section>
-        Section to be the output
-      </section>
     </main>
-    <p>Here I will try to create something</p>
-    <button>Click me</button>
-    <!--img src="https://cvets.net/wp-content/uploads/2019/04/cvets-dog-running-away.jpg"-->
+
+    <footer>© Laura Muñoz Baena 2026</footer>
   </body>
 </html>
